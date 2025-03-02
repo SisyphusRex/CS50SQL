@@ -1,0 +1,1 @@
+SELECT "entropy" AS "top 5 entropy" FROM "views" WHERE "english_title" LIKE '%the%' ORDER BY "brightness" LIMIT 5;

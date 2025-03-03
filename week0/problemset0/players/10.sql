@@ -1,0 +1,1 @@
+SELECT AVG("weight") as "Big SC Boys" FROM "players" WHERE "birth_state" = 'SC';

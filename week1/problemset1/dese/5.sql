@@ -1,0 +1,1 @@
+SELECT "city", COUNT("name") FROM "schools" GROUP BY "city" HAVING "type" LIKE '%Public%' AND COUNT("name") <= 3 ORDER BY COUNT("name") DESC, "city";

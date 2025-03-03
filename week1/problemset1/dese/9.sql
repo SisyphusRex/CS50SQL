@@ -1,0 +1,1 @@
+SELECT "name" FROM "districts" JOIN "expenditures" ON "expenditures"."district_id" = "districts"."id" GROUP BY "pupils" ORDER BY "pupils" ASC LIMIT 1;

@@ -1,0 +1,10 @@
+Dorchester|29
+Brockton|25
+Quincy|19
+Roxbury|19
+Chicopee|17
+Haverhill|17
+Boston|15
+Pittsfield|15
+Holyoke|14
+Attleboro|12

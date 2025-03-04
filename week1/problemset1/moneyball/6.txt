@@ -1,0 +1,30 @@
+Colorado Rockies|1663
+Seattle Mariners|1637
+Texas Rangers|1566
+Cleveland Indians|1559
+Minnesota Twins|1514
+Kansas City Royals|1503
+Houston Astros|1500
+Arizona Diamondbacks|1494
+San Francisco Giants|1493
+Boston Red Sox|1493
+Toronto Blue Jays|1489
+New York Yankees|1488
+St. Louis Cardinals|1469
+Oakland Athletics|1469
+Cincinnati Reds|1464
+Chicago White Sox|1463
+Florida Marlins|1461
+Anaheim Angels|1447
+Detroit Tigers|1439
+Atlanta Braves|1432
+Philadelphia Phillies|1431
+Tampa Bay Devil Rays|1426
+Chicago Cubs|1409
+Los Angeles Dodgers|1399
+San Diego Padres|1379
+Milwaukee Brewers|1378
+New York Mets|1361
+Montreal Expos|1361
+Baltimore Orioles|1359
+Pittsburgh Pirates|1333

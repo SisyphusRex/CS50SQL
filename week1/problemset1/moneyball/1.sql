@@ -1,0 +1,1 @@
+SELECT "year", AVG("salary") FROM "salaries" GROUP BY "year";

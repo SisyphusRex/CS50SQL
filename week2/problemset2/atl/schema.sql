@@ -28,8 +28,8 @@ CREATE TABLE "flights" (
     "airline_id" INTEGER,
     "from_code" TEXT NOT NULL,
     "to_code" TEXT NOT NULL,
-    "depart_datetime" NUMERIC NOT NULL,
-    "arrive_datetime" NUMERIC NOT NULL,
+    "depart_datetime" NUMERIC NOT NULL CHECK("depart_datetime" LIKE DATETIME("depart_datetime")),
+    "arrive_datetime" NUMERIC NOT NULL CHECK("depart_datetime" LIKE DATETIME("depart_datetime")),
     PRIMARY KEY("id"),
     FOREIGN KEY("airline_id") REFERENCES "airlines"("id")
-)
+);

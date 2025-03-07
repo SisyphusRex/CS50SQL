@@ -1,3 +1,9 @@
+DROP TABLE IF EXISTS "passengers";
+DROP TABLE IF EXISTS "checkins";
+DROP TABLE IF EXISTS "airlines";
+DROP TABLE IF EXISTS "flights";
+
+
 CREATE TABLE "passengers" (
     "id" INTEGER,
     "first_name" TEXT NOT NULL,

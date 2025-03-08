@@ -2,6 +2,7 @@ DROP TABLE IF EXISTS "passengers";
 DROP TABLE IF EXISTS "checkins";
 DROP TABLE IF EXISTS "airlines";
 DROP TABLE IF EXISTS "flights";
+DROP TABLE IF EXISTS "concourses";
 
 
 CREATE TABLE "passengers" (
@@ -24,8 +25,15 @@ CREATE TABLE "checkins" (
 CREATE TABLE "airlines" (
     "id" INTEGER,
     "name" TEXT NOT NULL UNIQUE,
-    "councourse" TEXT NOT NULL CHECK("councourse" IN ('A', 'B', 'C', 'D', 'E', 'F', 'T')),
     PRIMARY KEY("id")
+);
+
+CREATE TABLE "concourses" (
+    "id" INTEGER,
+    "airline_id" INTEGER,
+    "name" TEXT NOT NULL CHECK("name" IN ('A', 'B', 'C', 'D', 'E', 'F', 'T')),
+    PRIMARY KEY("id"),
+    FOREIGN KEY("airline_id") REFERENCES "airlines"("id")
 );
 
 CREATE TABLE "flights" (
@@ -34,8 +42,10 @@ CREATE TABLE "flights" (
     "airline_id" INTEGER,
     "from_code" TEXT NOT NULL,
     "to_code" TEXT NOT NULL,
-    "depart_datetime" NUMERIC NOT NULL CHECK("depart_datetime" LIKE DATETIME("depart_datetime")),
-    "arrive_datetime" NUMERIC NOT NULL CHECK("depart_datetime" LIKE DATETIME("depart_datetime")),
+    "depart_datetime" TEXT NOT NULL CHECK("depart_datetime" LIKE '____-__-__ __:__:__'),
+    "arrive_datetime" TEXT NOT NULL CHECK("arrive_datetime" LIKE '____-__-__ __:__:__')),
     PRIMARY KEY("id"),
     FOREIGN KEY("airline_id") REFERENCES "airlines"("id")
 );
+
+

@@ -1,0 +1,1 @@
+SELECT date(depart_datetime), time(depart_datetime) FROM "flights" WHERE "id" = 1;

@@ -7,7 +7,7 @@ DROP TABLE IF EXISTS "artists";
 DROP TABLE IF EXISTS "created";
 
 -- Creates new table and add data
-CREATE TABLE "collections" IF NOT EXISTS (
+CREATE TABLE IF NOT EXISTS "collections"(
     "id" INTEGER,
     "title" TEXT NOT NULL,
     "accession_number" TEXT NOT NULL UNIQUE,
@@ -16,7 +16,7 @@ CREATE TABLE "collections" IF NOT EXISTS (
 );
 
 INSERT INTO "collections" ("title", "accession_number", "acquired")
-VALUES 
+VALUES
 ('Profusion of flowers', '56.257', '1956-04-12'),
 ('Farmers working at dawn', '11.6152', '1911-08-03'),
 ('Spring outing', '14.76', '1914-01-08'),

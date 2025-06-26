@@ -6,7 +6,7 @@ WHEN NEW."accession_number" IN (
 )
 BEGIN
     UPDATE "collections" SET "deleted" = 0
-    WHERE "id" = NEW."id";
+    WHERE "accession_number" = NEW."accession_number";
 END;
 
 CREATE TRIGGER "insert_when_new"
